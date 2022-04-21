@@ -1,0 +1,21 @@
+server:
+  address:     ":8000"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+
+logger:
+  level: "all"
+  stdout: true
+
+database:
+  default:
+    type:  "mysql"
+    link:  "root:123456@tcp(127.0.0.1:3306)/inventory"
+  mongodb:
+    uri: "mongodb://69.231.164.75:27017/"
+    database: "inventory"
+
+gfcli:
+  gen:
+    dao:
+    - link:     "mysql:root:123456@tcp(127.0.0.1:3306)/inventory"
