@@ -11,14 +11,14 @@ type FuzzyGetGoodsReq struct {
 
 type FuzzyGetGoodsRes struct {
 	g.Meta `mime:"application/json" example:"{'code':0}"`
-	Goods  []*Goods `json:"goods,omitempty"`
+	Goods  []*Goods `json:"goods"`
 }
 
 type Goods struct {
-	Id     uint64  `json:"_id,omitempty"`
-	Name   string  `json:"name,omitempty"`
-	Type   string  `json:"type,omitempty"`
-	Unit   string  `json:"unit,omitempty"`
-	Price  float64 `json:"price,omitempty"`
-	Tariff float64 `json:"tariff,omitempty"`
+	Id     uint64  `json:"_id"`
+	Name   string  `json:"name"`
+	Type   string  `json:"type"`
+	Unit   string  `json:"unit"`
+	Price  float64 `json:"price"`
+	Tariff float64 `json:"tariff"`
 }
